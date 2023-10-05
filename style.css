@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 :root {
-    --darktheme-primary: #14001b;
-    --darktheme-secondary: #1d0027;
+    --darktheme-primary: #0c001b;
+    --darktheme-secondary: #0e0027;
     --darktheme-text-primary: #ffffff;
     --darktheme-text-secondary: #ffffffb9;
 }
@@ -92,6 +92,27 @@ body {
     border-radius: 10px;
 }
 
+.gradient {
+    animation: background-pan 3s linear infinite;
+    background: linear-gradient(to right, #0ff, rgb(70, 70, 185), #0ff);
+    background-size: 200%;
+    overflow: hidden;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+}
+
+
+@keyframes background-pan {
+    from {
+      background-position: 0% center;
+    }
+  
+    to {
+      background-position: -200% center;
+    }
+  }
 
 
 
