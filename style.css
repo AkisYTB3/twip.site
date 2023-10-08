@@ -1,10 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 :root {
-    --darktheme-primary: #0c001b;
-    --darktheme-secondary: #0e0027;
+    --darktheme-primary: rgb(16 24 30);
+    --darktheme-secondary: rgba(7, 10, 12, 0.26);
+    --lighttheme-secondary: rgba(255, 255, 255, 0.26);
     --darktheme-text-primary: #ffffff;
-    --darktheme-text-secondary: #ffffffb9;
+    --darktheme-text-secondary: rgb(219, 219, 219);
+
+    --primary: #5e35b1;
+    --primary-hover: rgb(102, 62, 184);
+    --primary-active: rgb(77, 47, 137);
+}
+
+hr.dark {
+    border: 2px solid var(--darktheme-secondary);
+}
+
+hr.light {
+    border: 2px solid var(--lighttheme-secondary);
+}
+
+.width100 {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.width90 {
+    width: 90%;
+    min-width: 90%;
+    max-width: 90%;
+}
+
+.width80 {
+    width: 80%;
+    min-width: 80%;
+    max-width: 80%;
+}
+
+.width70 {
+    width: 70%;
+    min-width: 70%;
+    max-width: 70%;
+}
+
+.width60 {
+    width: 60%;
+    min-width: 60%;
+    max-width: 60%;
+}
+
+.width50 {
+    width: 50%;
+    min-width: 50%;
+    max-width: 50%;
+}
+
+.progress {
+    height: 25px;
+    background-color: var(--darktheme-secondary);
+    margin: auto;
+    border-radius: 50px;
+    overflow: hidden;
 }
 
 * {
@@ -16,7 +73,7 @@ body {
     /*background: linear-gradient(to bottom right, #27002f, #60005c, #0b0015);*/
     padding: 0;
     margin: 0;
-    background-color: var(--darktheme-secondary);
+    background-color: var(--darktheme-primary);
     color: var(--darktheme-text-primary);
     text-align: center;
     width: auto;
@@ -75,6 +132,28 @@ body {
     font-size: 2.5rem;
 }
 
+button {
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--darktheme-text-primary);
+    background-color: var(--primary);
+    border: 0;
+    font-size: 2rem;
+    width: 15vh;
+    transition: 0.35s;
+    border-radius: 15px;
+}
+
+button:hover {
+    background-color: var(--primary-hover);
+    transition: 0.35s;
+}
+
+button:active {
+    background-color: var(--primary-active);
+    transition: 0.35s;
+    border-radius: 15px;
+}
+
 .toggle-button {
     position: absolute;
     right: 1.5rem;
@@ -101,6 +180,19 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     white-space: nowrap;
+}
+
+
+h1 {
+    color: var(--darktheme-text-primary);
+}
+
+p {
+    color: var(--darktheme-text-secondary);
+}
+
+.primarycolor {
+    color: var(--primary);
 }
 
 
