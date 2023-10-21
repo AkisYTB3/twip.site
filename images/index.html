@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twip Images</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+    <script>
+        ['LnZBkhJ.png', 'S1BXyF1.png', 'secret1.png' , 'UEtn8Wg.png', 'favicon.png'].forEach(function(img){
+            const newImage = document.createElement('img');
+            newImage.src = "" + img; // Just concatenate the path to the file name
+            newImage.setAttribute("alt", "Image"); // images require an ALT attribute to be valid
+            document.body.appendChild(newImage);
+            document.body.appendChild(document.createElement("hr"))
+        });
+    </script>
+    <p>Copyright Twip.Site 2023-2023</p>
+</body>
+</html>
