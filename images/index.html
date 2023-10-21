@@ -13,9 +13,12 @@
     <script>
         ['LnZBkhJ.png', 'S1BXyF1.png', 'secret1.png' , 'UEtn8Wg.png', 'favicon.png'].forEach(function(img){
             const newImage = document.createElement('img');
-            newImage.src = "" + img; // Just concatenate the path to the file name
-            newImage.setAttribute("alt", "Image"); // images require an ALT attribute to be valid
-            document.body.appendChild(newImage);
+            const newAnchor = document.createElement("a");
+            newImage.src = "" + img;
+            newImage.setAttribute("alt", "Image");
+            newAnchor.setAttribute("href", img);
+            document.body.appendChild(newAnchor);
+            newAnchor.appendChild(newImage);
             document.body.appendChild(document.createElement("hr"))
         });
     </script>
