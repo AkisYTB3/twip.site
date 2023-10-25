@@ -136,7 +136,6 @@ a#active {
     color: var(--primary);
 }
 
-
 button {
     font-family: 'Bebas Neue', sans-serif;
     color: var(--darktheme-text-primary);
@@ -194,6 +193,14 @@ h1 {
 
 p {
     color: var(--darktheme-text-secondary);
+}
+
+#tos{
+    margin: 0 25%;
+}
+
+p > a {
+    color: var(--primary);
 }
 
 .primarycolor {
