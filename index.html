@@ -21,11 +21,38 @@
             <li><a href="/" id="active">Home</a></li>
             <li><a href="#">Store</a></li>
             <li><a href="/terms-and-conditions/">Terms & Conditions</a></li>
+            <li><button>Log-in</button></li>
         </ul>
       </div>
     </nav>
 
-    <hr class="dark width100">
+
+    <div class="wrapper">
+      <div class="form-box login">
+        <h2>Login</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <input type="email" required>
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+            <input type="password" required>
+            <label>Password</label>
+          </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox">Remember me</label>
+            <a href="#">Forgot Password?</a>
+          </div>
+          <button type="submit" class="btn">Login</button>
+          <div class="login-register">
+            <p>Don't have an accoubt? <a href="#" class="register-link">Register</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+
 
     <div class="banner">
       <h1 class="">Twip.Site</h1>
@@ -36,5 +63,15 @@
         <div style="background-color: var(--primary); margin: 0; text-align: center; height: 100%; width: 23%;">23%</div>
       </div>
     </div>
+
+
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>
