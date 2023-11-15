@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!---<script>
-        ['LnZBkhJ.png', 'S1BXyF1.png', 'secret1.png' , 'UEtn8Wg.png', 'favicon.png', 'JTmOeHB.png', 'CVUmdjm.png'].forEach(function(img){
+    <?php include('imageList.php'); ?>
+    <script>
+        //['LnZBkhJ.png', 'S1BXyF1.png', 'secret1.png' , 'UEtn8Wg.png', 'favicon.png', 'JTmOeHB.png', 'CVUmdjm.png'].forEach(function(img){
+            imageNames.forEach(function(img){
             const newImage = document.createElement('img');
             const newAnchor = document.createElement("a");
             newImage.src = "" + img;
@@ -18,8 +20,7 @@
             newAnchor.appendChild(newImage);
             document.body.appendChild(document.createElement("hr"))
         });
-    </script>--->
-    <?php include('imageList.php'); ?>
+    </script>
     <p>Copyright Twip.Site 2023-2023</p>
 </body>
 </html>
