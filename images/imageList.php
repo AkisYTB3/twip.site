@@ -13,10 +13,5 @@ foreach ($images as $image) {
 
 // Convert the PHP array to a JSON string
 $imageNamesJSON = json_encode($imageNames);
+echo $imageNamesJSON;
 ?>
-
-<script>
-    // Create a JavaScript variable with the image names array
-    var imageNames = <?php echo $imageNamesJSON; ?>;
-    console.log(imageNames); // You can use this array in your JavaScript code
-</script>
