@@ -15,7 +15,7 @@ const xhttp = new XMLHttpRequest();
     imageNames.forEach(function(img){
             const newImage = document.createElement('img');
             const newAnchor = document.createElement("a");
-            newImage.src = "" + img;
+            newImage.src = "" + img + ".png";
             newImage.setAttribute("alt", "Image");
             newAnchor.setAttribute("href", img);
             document.body.appendChild(newAnchor);
