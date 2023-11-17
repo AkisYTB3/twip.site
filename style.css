@@ -7,9 +7,9 @@
     --darktheme-text-primary: #ffffff;
     --darktheme-text-secondary: rgb(219, 219, 219);
 
-    --primary: #5e35b1;
-    --primary-hover: rgb(102, 62, 184);
-    --primary-active: rgb(77, 47, 137);
+    --primary: #5865F2;
+    --primary-hover: #6872e4;
+    --primary-active: #4652ce;
 }
 
 hr.dark {
