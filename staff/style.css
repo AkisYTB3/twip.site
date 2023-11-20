@@ -185,7 +185,11 @@ body {
 }
 
 .red {
-    color: rgb(182, 0, 0);
+    color: #AA0000;
+}
+
+.gold {
+    color:	#FFAA00;
 }
 
 .staff-card img {
