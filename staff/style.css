@@ -74,7 +74,7 @@ body {
     padding: 0;
     margin: 0;
     background-color: var(--darktheme-primary);
-    background: url(https://twip.site/images/JTmOeHB.png);
+    background: url(/images/JTmOeHB.png);
     color: white;
     background-size: cover;
     background-attachment: fixed;
@@ -159,6 +159,7 @@ body {
     height: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 .staff-container {
@@ -192,13 +193,21 @@ body {
     color:	#FFAA00;
 }
 
+.yellow {
+    color: rgb(255, 255, 0)
+}
+
+.bright-red {
+    color: #cb4b4b;
+}
+
 .staff-card img {
     border-radius: 5px;
 }
 
 .card-text{
     margin: 1rem;
-    font-size: 20px;
+    font-size: 2.86vh;
 }
 
 
@@ -322,6 +331,7 @@ a#active {
 
 h1 {
     color: var(--darktheme-text-primary);
+    margin-bottom: 0;
 }
 
 p {
